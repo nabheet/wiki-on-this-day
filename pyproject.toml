@@ -1,0 +1,16 @@
+
+[project]
+name = "on-this-day-agent"
+version = "0.1.0"
+description = "Agentic LangChain system that turns Wikipedia history into a news video"
+requires-python = ">=3.10"
+
+dependencies = [
+    "langchain>=0.2.0",
+    "langchain-openai>=0.1.0",
+    "requests",
+    "pydantic",
+    "pytest",
+    "pydantic-settings>=2.12.0",
+    "moviepy>=2.2.1",
+]
