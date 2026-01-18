@@ -2,6 +2,9 @@ from pathlib import Path
 from openai import OpenAI
 from openai.types.video import Video
 from langchain_core.prompts import PromptTemplate
+from logging import getLogger
+
+logger = getLogger(__name__)
 
 
 class NewsVideoGeneratorTool:
@@ -22,7 +25,7 @@ class NewsVideoGeneratorTool:
             prompt=self.prompt_template.format(script=script),
             seconds="12",
         )
-        print("Video generated:", response.id)
+        logger.info(f"Video generated: {response.id}")
         return response.id
 
     def download_video(self, video_id: str, output_path: Path) -> None:
@@ -30,11 +33,11 @@ class NewsVideoGeneratorTool:
             video_id=video_id
         ) as response:
             response.stream_to_file(output_path)
-        print(f"Video downloaded to: {output_path}")
+        logger.info(f"Video downloaded to: {output_path}")
 
     def delete_video(self, video_id: str) -> None:
         self.client.videos.delete(video_id=video_id)
-        print(f"Deleted video with ID: {video_id}")
+        logger.info(f"Deleted video with ID: {video_id}")
 
     def list_videos(self) -> list[Video]:
         videos = self.client.videos.list()

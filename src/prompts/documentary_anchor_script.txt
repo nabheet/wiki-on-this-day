@@ -17,6 +17,7 @@ SCRIPT REQUIREMENTS:
 - Event length: approximately 8 seconds per event when read aloud
 - Flow naturally from one event to the next
 - Avoid lists or academic tone
+- Each even must be in a separate paragraph
 
 STYLE:
 - Calm, reflective, and authoritative
