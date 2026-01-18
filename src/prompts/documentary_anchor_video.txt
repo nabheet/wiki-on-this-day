@@ -1,0 +1,52 @@
+Create a short, vertical documentary-style video of a professional documentary presenter reading the following historical event:
+{script}
+
+VIDEO FORMAT:
+- Aspect ratio: 9:16 (vertical)
+- Duration: 8 seconds
+- Realistic cinematic documentary style
+- High visual coherence across frames
+
+VISUAL APPROACH:
+Depict the event indirectly, as if calmly observed rather than dramatized.
+Focus on environment, setting, and subtle human presence.
+Avoid explicit action or spectacle.
+Let the scene feel quiet, inevitable, and grounded in time.
+
+CAMERA & MOTION:
+- Slow, natural camera movement (gentle pan, slow push, or static)
+- No fast cuts
+- No handheld shake
+- No extreme close-ups
+- Eye-level or slightly wide framing
+- Pause for about 0.2 seconds before and after the video
+
+HISTORICAL ACCURACY:
+- Architecture, clothing, tools, and environment must match the time period
+- No modern objects, technology, text, or symbols
+- If details are uncertain, use symbolic or environmental imagery instead of literal reenactment
+- Speak fast to stay within time constraints
+
+LIGHTING & COLOR:
+- Naturalistic lighting
+- Muted, cinematic color palette
+- No neon or exaggerated contrast
+- Subtle film grain allowed
+
+CONTENT RULES:
+- No text overlays
+- No subtitles
+- No logos
+- No watermarks
+- No narration
+- No UI elements
+- No modern symbols
+
+TONE:
+- Calm
+- Observational
+- Reflective
+- Timeless
+
+GOAL:
+Produce a visually restrained, historically respectful shot that can be seamlessly stitched with other clips into a documentary-style YouTube Short.

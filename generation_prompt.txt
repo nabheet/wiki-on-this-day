@@ -1,0 +1,30 @@
+I want to build an agentic system using LangChain which can download the "on this day" content from Wikipedia and create a video of a news reporter reading this content. 
+
+Ensure: 
+* use all libraries provided by LangChain only
+* only use other libraries if LangChain does not have one for the need.
+* generate downloadable zip file of the directory containing all necessary files
+* generate one uv install command for all dependencies
+* generate README.md file for the project
+* generate pyproject.toml file for the project
+* do not use langchain_classic
+* use only requests library to connect to wikipedia
+* use openapi llm to generate text
+* use openai sora to generate video with audio
+* ensure each event has a date associated with it
+* ensure there is a news anchor in the video reading the news
+* ensure code is written in Python
+* ensure code is properly structured into modules and packages
+* ensure code is organized for a LangChain agentic system
+* ensure code follows LangChain conventions and best practices
+* ensure code has separate directies for prompts, chains, agents, tools, and memory
+* ensure all tool like things are in the tools directory
+* ensure code is modular and well organized
+* ensure code is well commented
+* ensure code has unit tests for every class
+* ensure code follows best practices
+* ensure code is secure and handles errors gracefully
+* ensure code follows SOLID principles
+* ensure code follows DRY principles
+* ensure code follows KISS principles
+* ensure code follows YAGNI principles
