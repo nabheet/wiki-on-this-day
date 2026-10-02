@@ -6,7 +6,7 @@ documentary script, then renders each one as a presenter video with OpenAI
 Sora and stitches them into a single downloadable daily history video.
 
 ```bash
-uv pip install -r pyproject.toml
+uv sync
 ```
 
 ## On this day Wikipedia events
@@ -30,7 +30,7 @@ Uses **LangChain (modern, non-classic)** to build an agentic system that:
 - chains/ – LLM chains for summarization and script generation
 - tools/ – External tools (Wikipedia fetcher, video generator)
 - prompts/ – Prompt templates
-- memory/ – Conversation/state memory
+- utils/ – Shared helpers
 - tests/ – Unit tests for every class
 
 ## AI Generation Prompt
@@ -44,13 +44,13 @@ stitching the video files into one file.
 ## Install
 
 ```bash
-uv pip install -r pyproject.toml
+uv sync
 ```
 
 ## Run
 
 ```bash
-uv run python -m main
+uv run python src/main.py
 ```
 
 ## Environment Variables
