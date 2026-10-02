@@ -1,6 +1,8 @@
+from pathlib import Path
+
 from langchain_core.prompts import PromptTemplate
 from langchain_openai import ChatOpenAI
-from pathlib import Path
+
 from utils.settings import settings
 
 

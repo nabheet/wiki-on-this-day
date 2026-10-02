@@ -1,5 +1,6 @@
-import requests
 from datetime import date
+
+import requests
 
 
 class WikipediaOnThisDayTool:
@@ -27,4 +28,4 @@ class WikipediaOnThisDayTool:
                 events.sort(key=lambda x: x["sort_key"])
             return events
         except Exception as e:
-            raise RuntimeError(f"Wikipedia fetch failed: {e}")
+            raise RuntimeError(f"Wikipedia fetch failed: {e}") from e

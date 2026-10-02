@@ -1,10 +1,11 @@
 from datetime import date
+from logging import getLogger
 from pathlib import Path
-from tools.video_stitcher import VideoStitcherTool
-from tools.wikipedia import WikipediaOnThisDayTool
+
 from chains.documentary_chain import NewsScriptChain
 from tools.video import NewsVideoGeneratorTool
-from logging import getLogger
+from tools.video_stitcher import VideoStitcherTool
+from tools.wikipedia import WikipediaOnThisDayTool
 
 logger = getLogger(__name__)
 
@@ -34,10 +35,6 @@ class OnThisDayDocumentaryAgent:
     def generate_long_video(self, script: str) -> Path | None:
         chunks = script.split("\n\n")
         clip_paths: list[Path] = []
-
-        if len(chunks) == 0:
-            logger.error("\n\nNo script chunks to process.\n\n")
-            return None
 
         if len(chunks) < self.CHUNK_LIMIT:
             logger.error("\n\nNot enough chunks to generate a long video.\n\n")
