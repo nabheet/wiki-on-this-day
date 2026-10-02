@@ -1,7 +1,22 @@
-
 # On This Day Agentic Documentary Video Generator
 
-This project uses **LangChain (modern, non-classic)** to build an agentic system that:
+Generate **"on this day" Wikipedia history videos**: this app fetches historical
+events from the Wikipedia API, asks an LLM to rewrite the top events as a
+documentary script, then renders each one as a presenter video with OpenAI
+Sora and stitches them into a single downloadable daily history video.
+
+```bash
+uv pip install -r pyproject.toml
+```
+
+## On this day Wikipedia events
+
+Fetches "on this day" historical events from the **Wikipedia API** (requests
+only) and ensures every event is date-associated.
+
+## Daily history video generation
+
+Uses **LangChain (modern, non-classic)** to build an agentic system that:
 
 1. Downloads "On this day" historical events from Wikipedia
 2. Ensures every event is date-associated
