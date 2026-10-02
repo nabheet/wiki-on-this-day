@@ -36,10 +36,6 @@ class OnThisDayDocumentaryAgent:
         chunks = script.split("\n\n")
         clip_paths: list[Path] = []
 
-        if len(chunks) == 0:
-            logger.error("\n\nNo script chunks to process.\n\n")
-            return None
-
         if len(chunks) < self.CHUNK_LIMIT:
             logger.error("\n\nNot enough chunks to generate a long video.\n\n")
             return None

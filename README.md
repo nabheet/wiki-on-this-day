@@ -62,3 +62,23 @@ uv run python src/main.py
 - Wikipedia access uses **requests only**
 - No `langchain_classic`
 - Follows SOLID / DRY / KISS / YAGNI principles
+
+## Tests
+
+```bash
+uv run --group dev pytest
+```
+
+Every class has unit tests — the Wikipedia fetcher, the LLM script chain, the Sora
+video generator, the clip stitcher, settings, and the agent's orchestration. All
+external calls (Wikipedia, OpenAI, moviepy) are mocked, so the suite needs no
+network access, no API key, and no ffmpeg. Coverage is reported on every run.
+
+Lint and format checks:
+
+```bash
+uv run ruff check .
+uv run ruff format --check .
+```
+
+CI runs lint and the test suite on every pull request.
