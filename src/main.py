@@ -1,5 +1,6 @@
+from logging import basicConfig, getLogger
+
 from agents.documentary_agent import OnThisDayDocumentaryAgent
-from logging import getLogger, basicConfig
 
 basicConfig(level="INFO")
 

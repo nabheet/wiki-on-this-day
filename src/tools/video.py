@@ -1,8 +1,9 @@
+from logging import getLogger
 from pathlib import Path
+
+from langchain_core.prompts import PromptTemplate
 from openai import OpenAI
 from openai.types.video import Video
-from langchain_core.prompts import PromptTemplate
-from logging import getLogger
 
 logger = getLogger(__name__)
 

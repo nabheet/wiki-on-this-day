@@ -1,10 +1,11 @@
 from datetime import date
+from logging import getLogger
 from pathlib import Path
-from tools.video_stitcher import VideoStitcherTool
-from tools.wikipedia import WikipediaOnThisDayTool
+
 from chains.documentary_chain import NewsScriptChain
 from tools.video import NewsVideoGeneratorTool
-from logging import getLogger
+from tools.video_stitcher import VideoStitcherTool
+from tools.wikipedia import WikipediaOnThisDayTool
 
 logger = getLogger(__name__)
 
