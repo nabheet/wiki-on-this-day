@@ -6,7 +6,11 @@ on:
   pull_request:
 
 concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
+  # Cancels superseded runs on the same ref. github.head_ref is set only on
+  # pull_request events; everywhere else the unique run id is used, so the
+  # group matches the fleet-wide form in the CI standard (§8) instead of
+  # cancelling a push run with a pull_request one.
+  group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
   cancel-in-progress: true
 
 jobs:
