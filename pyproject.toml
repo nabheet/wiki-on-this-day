@@ -4,6 +4,8 @@ name = "on-this-day-agent"
 version = "0.1.0"
 description = "Agentic LangChain system that turns Wikipedia history into a news video"
 requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
 
 dependencies = [
     "langchain>=0.2.0",
