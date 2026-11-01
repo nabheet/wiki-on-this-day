@@ -35,11 +35,12 @@ Uses **LangChain (modern, non-classic)** to build an agentic system that:
 
 ## AI Generation Prompt
 
-ChatGPT 5.2 was used to generate the initial version of this code using the prompt in `generation_prompt.txt`. There was significant amount of time spent debugging and refactoring
-the generated code. However, it works now. One of the refactors involved splitting the
-generated text into smaller chunks so Sora could generate the video via API within its
-limits. After downloading the individual files, I asked ChatGPT to generate code for
-stitching the video files into one file.
+ChatGPT 5.2 was used to generate the initial version of this code using the prompt
+in `generation_prompt.txt`. There was significant amount of time spent debugging and
+refactoring the generated code. However, it works now. One of the refactors involved
+splitting the generated text into smaller chunks so Sora could generate the video via
+API within its limits. After downloading the individual files, I asked ChatGPT to
+generate code for stitching the video files into one file.
 
 ## Install
 
